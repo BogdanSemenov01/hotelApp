@@ -16,8 +16,8 @@ export const HotelsApi: IHotelsAPI = {
         headers: {
           "content-type": "application/json",
           "X-RapidAPI-Key":
-            "6f97133960mshb7912072f0fe913p17360fjsn3bc0f1baa6fb",
-          "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+            import.meta.env.VITE_API_KEY,
+          "X-RapidAPI-Host": import.meta.env.VITE_HOST_KEY,
         },
         data: `{"currency":"USD","eapid":1,"locale":"en_US","siteId":300000001,"destination":{"regionId":""},"checkInDate":{"day":10,"month":10,"year":2022},"checkOutDate":{"day":15,"month":10,"year":2022},"rooms":[{"adults":2}],"resultsStartingIndex":${this.currentIndex},"resultsSize":30,"sort":"PRICE_LOW_TO_HIGH"}`,
       })
@@ -32,8 +32,8 @@ export const HotelsApi: IHotelsAPI = {
         headers: {
           "content-type": "application/json",
           "X-RapidAPI-Key":
-            "6f97133960mshb7912072f0fe913p17360fjsn3bc0f1baa6fb",
-          "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+            import.meta.env.VITE_API_KEY,
+          "X-RapidAPI-Host": import.meta.env.VITE_HOST_KEY,
         },
         data: `{"currency":"USD","eapid":1,"locale":"en_US","siteId":300000001,"destination":{"regionId":""},"checkInDate":{"day":10,"month":10,"year":2022},"checkOutDate":{"day":15,"month":10,"year":2022},"rooms":[{"adults":2}],"resultsStartingIndex":${this.currentIndex},"resultsSize":30,"sort":"PRICE_LOW_TO_HIGH"}`,
       })
